@@ -244,6 +244,30 @@ $(document).ready(function () {
         <li>
   <a href="index.html">Praktiske oplysninger</a>
 </li>
+<li>
+  <a href="kursusplan.html">Kursusplan</a>
+</li>
+<li>
+  <a href="R.html">R</a>
+</li>
+<li>
+  <a href="data.html">Data</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Opgaver
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://github.com/anderstolver/StatData1_2022/tree/main/docs/opgaver">Fra ovelsestimer</a>
+    </li>
+    <li>
+      <a href="https://github.com/anderstolver/StatData1_2022/tree/main/docs/eksamensopgaver">Gamle eksamensopgaver</a>
+    </li>
+  </ul>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -309,7 +333,12 @@ Statistisk Dataanalyse 1 (version 2022/2023)
 <h2>Instruktorer</h2>
 <p>Følgende instruktorer (hjælpelærere) er tilknyttet kurset</p>
 <ul>
-<li></li>
+<li>Niklas Ellelund Hansen (<a href="mailto:lvr863@alumni.ku.dk" class="email">lvr863@alumni.ku.dk</a>)</li>
+<li>Frederik Fabricius-Bjerre (<a href="mailto:vxl334@alumni.ku.dk" class="email">vxl334@alumni.ku.dk</a>)</li>
+<li>Jens Baalkilde Andersen (<a href="mailto:ldj472@alumni.ku.dk" class="email">ldj472@alumni.ku.dk</a>)</li>
+<li>William Schiwe Kronbæk (<a href="mailto:wsk@math.ku.dk" class="email">wsk@math.ku.dk</a>)</li>
+<li>Mathias Petersen (<a href="mailto:tnw212@alumni.ku.dk" class="email">tnw212@alumni.ku.dk</a>)</li>
+<li>NN</li>
 </ul>
 <hr />
 </div>
@@ -317,13 +346,13 @@ Statistisk Dataanalyse 1 (version 2022/2023)
 <h2>Skema / Ugestruktur</h2>
 <p>Mandag</p>
 <ul>
-<li>13:00-14:45: forelæsninger af Anders Tolver i aud-A2-82.01</li>
-<li>15:00-16:45: regneøvelser <!--[regneøvelser](#oevelsestimer)--> med hjælpelærer</li>
+<li>Ca. 13:00-14:45: forelæsninger af Anders Tolver i aud-A2-82.01</li>
+<li>15:00-16:45: <a href="#oevelsestimer">regneøvelser</a> med hjælpelærer</li>
 </ul>
 <p>Onsdag</p>
 <ul>
-<li>10:00-11:45: forelæsninger af Anders Tolver i aud-A2-82.01</li>
-<li>13:00-15:45: regneøvelser <!--[regneøvelser](#oevelsestimer)--> med hjælpelærer</li>
+<li>Ca. 10:00-11:45: forelæsninger af Anders Tolver i aud-A2-82.01</li>
+<li>13:00-15:45: <a href="#oevelsestimer">regneøvelser</a> med hjælpelærer</li>
 </ul>
 <!--Derudover uploades hver uge en video af op til 45 minutters varighed, som du forventes at se i løbet af ugen. Det tilstræbes at denne video er til rådighed onsdag kl. 16:00.-->
 <p>Oplysninger omkring tildeling af lokaler kan desuden findes på <a href="https://skema.ku.dk/tt/tt.asp?SDB=KU2223&amp;language=DK&amp;folder=Reporting&amp;style=textspreadsheet&amp;type=module&amp;idtype=id&amp;id=111333&amp;weeks=6&amp;days=1-5&amp;periods=1-68&amp;width=0&amp;height=0&amp;template=SWSCUST2+module+textspreadsheet">KUs skemaside</a>.</p>
@@ -331,27 +360,21 @@ Statistisk Dataanalyse 1 (version 2022/2023)
 </div>
 <div id="plan-over-kursusaktiviteter" class="section level2">
 <h2>Plan over kursusaktiviteter</h2>
-<!--
-For en detaljeret plan over kursusaktiviteter henvises til følgende [kursusplan](https://anderstolver.github.io/StatData1_2021/kursusplan.html).
-
-Jeg vil som udgangspunkt annocere detaljerne i kursusplanen for den kommende uge  torsdag eftermiddag (i den foregående uge). Jeg vurderer løbende hvordan kurset skrider frem, og det er derfor ikke muligt at lave en detaljeret plan for hele kurset fra starten. Der kommer en grov foreløbig oversigt over kurset omkring blokstart.
--->
+<p>For en detaljeret plan over kursusaktiviteter henvises til følgende <a href="https://anderstolver.github.io/StatData1_2022/kursusplan.html">kursusplan</a>.</p>
+<p>Jeg vil som udgangspunkt annocere detaljerne i kursusplanen for den kommende uge torsdag eftermiddag (i den foregående uge). Jeg vurderer løbende hvordan kurset skrider frem, og det er derfor ikke muligt at lave en detaljeret plan for hele kurset fra starten. Der kommer en grov foreløbig oversigt over kurset omkring blokstart.</p>
 <hr />
 </div>
 <div id="indhold" class="section level2">
 <h2>Indhold</h2>
 <p>Der henvises igen til kursets eksterne hjemmeside og til den <a href="https://kurser.ku.dk/course/lmab10069u/2022-2023">officielle kursusbeskrivelse</a> for mere information.</p>
-<!--
-Vigtige emner på kurset er
-
-* Statistiske grundbegreber: Sandsynligheder, variation, statistisk model, estimation, test, konfidensintervaller
-* Analyser baseret på normalfordelingen: Sammenligning af stikprøver, en- og tosidet variansanalyse, regressionsanalyse
-* Analyser af diskrete data: Binomialfordelingen, tosidede antalstabeller
-
-Der lægges vægt på "oversættelse" fra biologiske problemstillinger til statistisk formulering og analyse, samt på fortolkning af resultaterne.
-
-Beregninger gennemføres i simple tilfælde med lommeregner, men som hovedregel ved brug af det statistiske program R - også ved eksamen.
--->
+<p>Nogle vigtige emner og begreber på kurset er</p>
+<ul>
+<li>Statistiske grundbegreber: Sandsynligheder, variation, statistisk model, estimation, test, konfidensintervaller</li>
+<li>Analyser baseret på normalfordelingen: Sammenligning af stikprøver, en- og tosidet variansanalyse, regressionsanalyse</li>
+<li>Analyser af diskrete data: Binomialfordelingen, tosidede antalstabeller</li>
+</ul>
+<p>Der lægges vægt på <em>oversættelse</em> fra biologiske problemstillinger til statistisk formulering og analyse, samt på fortolkning af resultaterne.</p>
+<p>Beregninger gennemføres som hovedregel ved brug af det statistiske program R - også ved eksamen.</p>
 <hr />
 </div>
 <div id="forudsætninger" class="section level2">
@@ -373,9 +396,7 @@ Beregninger gennemføres i simple tilfælde med lommeregner, men som hovedregel 
 <ul>
 <li>Claus Thorn Ekstrøm &amp; Helle Sørensen: <strong>Statistical Data Analyse for the Life Sciences (Second Edition)</strong></li>
 </ul>
-<!--
-Det gennemgåede pensum dækkes i grove træk af indholdet kapitel 1-7, dele af kapitel 8, kapitel 10-12 og kapitel 14. En mere detaljeret pensumliste laves løbende som kurset skrider frem.
--->
+<p>Det gennemgåede pensum dækkes i grove træk af indholdet kapitel 1-7, dele af kapitel 8, kapitel 10-12 og kapitel 14. En mere detaljeret pensumliste laves løbende som kurset skrider frem.</p>
 <p>Du vil i lige så høj grad komme til at opleve, at vi trækker på følgende undervisningsmateriale</p>
 <ul>
 <li>forelæsningsslides (evt. videoer)</li>
@@ -386,13 +407,9 @@ Det gennemgåede pensum dækkes i grove træk af indholdet kapitel 1-7, dele af 
 </div>
 <div id="forelæsninger" class="section level2">
 <h2>Forelæsninger</h2>
-<!--
-Forelæsningerne bliver ikke en slavisk gennemgang af stoffet i bogen. Jeg vil i stedet forsøge at fokusere på ideer, fortolkninger, praksis og forståelse.
-
-Der vil være derfor være mange ting i bogen, der ikke bliver gennemgået. Det betyder ikke at de ikke er vigtige, og I forventes at læse dem selv derhjemme. I er altid velkomne til at stille spørgsmål til dem. 
-
-Ved forelæsningerne benyttes forelæsningsslides der gøres tilgængelige umiddelbart før forelæsningen. 
--->
+<p>Forelæsningerne bliver ikke en slavisk gennemgang af stoffet i bogen. Jeg vil i stedet forsøge at fokusere på ideer, fortolkninger, praksis og forståelse.</p>
+<p>Der vil være derfor være mange ting i bogen, der ikke bliver gennemgået. Det betyder ikke at de ikke er vigtige, og I forventes at læse dem selv derhjemme. I er altid velkomne til at stille spørgsmål til dem.</p>
+<p>Ved forelæsningerne benyttes forelæsningsslides der gøres tilgængelige umiddelbart før forelæsningen.</p>
 <!--
 Desuden vil alle forelæsninger bliver livestreamet og optagelser af forelæsningen vil blive lagt ud på Absalon / kursushjemmesiden. Udgangspunktet er, at man *møder op* til forelæsninger og er tilstede live enten fysisk eller online. De må regnes som en ekstraordinær service, at forelæsningerne optages, og der kan være praktiske eller didaktiske årsager til, at jeg vælger at lægge optagelser af forelæsninger med en vis forsinkelse.
 -->
@@ -402,15 +419,17 @@ Desuden vil alle forelæsninger bliver livestreamet og optagelser af forelæsnin
 <h2>Øvelsestimer</h2>
 <p>Ved øvelsestimerne sidder I og regner de opgaver der er annonceret på ugeplanen. Der er instruktorer der kan hjælpe jer, og I er velkomne til at spørge om alt hvad der har med kurset at gøre. Enkelte opgaver vil blive gennemgået ved tavlen eller online til alle på holdet, hvis der er behov.</p>
 <p>Der vil ikke være tid til at regne alle opgaver i løbet af øvelsestimerne, og de vil ikke alle blive gennemgået. Resten er hjemmearbejde, og det er dit eget ansvar at få fulgt op på opgaverne.</p>
+<p>Antallet er øvelseshold er fastlagt ud fra det forventede deltagerantal, og I er automatisk på tilfældig måde blevet inddelt i 7 øvelseshold. Jeg er ligeglad med, om I organiserer jer anderledes (fx. hvis I har ønsker om, hvem I gerne vil på hold med), blot jeg ikke skal blandes ind i dette :-)</p>
+<p>I praksis foregår øvelsesundervisningen i lokaler af varierende størrelse, så der kan være lokaler som rummer flere hold og er bemandet med flere hjælpelærere. Forsøg at fordele jer, så der er ca. dobbelt så mange studerende i de lokaler, hvor der er to hjælpelærere.</p>
+<p>I kan se en oversigt over de tildelte lokaler via følgende <a href="https://skema.ku.dk/tt/tt.asp?SDB=KU2223&amp;language=DK&amp;folder=Reporting&amp;style=textspreadsheet&amp;type=module&amp;idtype=id&amp;id=111333&amp;weeks=6&amp;days=1-5&amp;periods=1-68&amp;width=0&amp;height=0&amp;template=SWSCUST2+module+textspreadsheet">link</a>.</p>
 <!--
-I praksis foregår øvelsesundervisningen i 4 lokaler, hvert med plads til enten 32 eller 64 studerende. Derfor vil der i nogle lokaler være 2 øvelseslærere til stede ved undervisningen. Antallet er øvelseshold er fastlagt ud fra det forventede deltagerantal, og I er automatisk på tilfældig måde blevet inddelt i 7 øvelseshold. Jeg er ligeglad med, om I organiserer jer anderledes (fx. hvis I har ønsker om, hvem I gerne vil på hold med), blot jeg ikke skal blandes ind i dette :-) Forsøg at fordele jer, så der er ca. dobbelt så mange studerende i de lokaler, hvor der er to hjælpelærere. 
+* Hold 1, **aud - A2-70.04, Thorvaldsensvej 40, Frederiksberg**: lokale dimensioneret til 144 personer
+* Hold 2, **aud - A2-70.03, Thorvaldsensvej 40, Frederiksberg**: lokale dimensioneret til 144 personer 
+* Hold 3, **øv - A2-74.11,Rolighedsvej 26, Frederiksberg**: lokale dimensioneret til 30 studerende 
+* Hold 4+5, **øv - A2-84.-11, Thorvaldsensvej 40, Frederiksberg**: større lokale dimensioneret til 70 studerende
+* Hold 6+7, **øv - A2-84.-12, Thorvaldsensvej 40, Frederiksberg**: større lokale dimensioneret til 70 studerende
 
-I kan se en oversigt over lokaler her:
 
-* Hold 3+4, **øv - A2-84.-12, Thorvaldsensvej 40, Frederiksberg**: større lokale dimensioneret til ca. 64 studerende (her vil være 2 hjælpelærere)
-* Hold 5+6, **øv - A2-70.02, Thorvaldsensvej 40, Frederiksberg**: større lokale dimensioneret til ca. 64 studerende (her vil være 2 hjælpelærere)
-* Hold 7, **øv - A1-01.16, Bülowsvej 17, Frederiksberg**: lokale dimensioneret til ca. 32 studerende (1 hjælpelærer)
-* Hold 1+2, **øv - A1-01.13, Bülowsvej 17, Frederiksberg**: større lokale dimensioneret til ca. 64 studerende (1 hjælpelærer)
 
 Lokalerne A1-01.13 og A1-01.16 ligger så tæt på hinanden, at I må prøve fra gang til gang at fordele jer ud i lokalerne på en fornuftig måde. Der er kun 2 instruktorer til at dække de 2 lokaler, selvom det ene lokale er større end det andet. 
 -->
@@ -418,22 +437,19 @@ Lokalerne A1-01.13 og A1-01.16 ligger så tæt på hinanden, at I må prøve fra
 </div>
 <div id="afleveringsopgaver" class="section level2">
 <h2>Afleveringsopgaver</h2>
-<!--
-Der vil blive stillet en afleveringsopgave et par gange i løbet af kurset. Det er frivilligt at aflevere, men det er et rasende godt tilbud og en fremragende mulighed for at få feedback på din skriftlige fremstilling af besvarelsen.
--->
+<p>Der vil blive stillet en afleveringsopgave et par gange i løbet af kurset. Det er frivilligt at aflevere, men det er et rigtig godt tilbud og en fremragende mulighed for at få feedback på din skriftlige fremstilling af besvarelsen.</p>
 <hr />
 </div>
 <div id="hjemmearbejde" class="section level2">
 <h2>Hjemmearbejde</h2>
-<!--
-Udover de skemalagte timer skal du naturligvis arbejde intensivt med stoffet på egen hånd. Undervisningen (skal) tilrettelægges, så et fuldtidsstudie kræver, at du bruger mindst 40 timer om ugen på dit studie (heraf mindst 20 timer på Statistik Dataanalyse). Hvis du bruger mindre end 20 timer om uger, så kan du ikke forvente at få et fornuftigt udbytte af kurset, og din præstation ved eksamen vil være dårligere, end den behøvede at være. Det er naturligvis meget forskelligt fra person til person hvordan denne tid bedst fordeles på de forskellige kursuselementer, men et løst forslag er følgende:
-
-* Forelæsninger: 4 timer
-* Øvelsestimer: 5 timer 
-* Læse i bogen før og efter forelæsninger: 4 timer
-* Se ugens video(er) og arbejde selvstændigt med indholdet: 2 timer
-* Selvstændigt arbejde med opgaver, slides, R programmer m.m. (før/efter timer): 5 timer
--->
+<p>Udover de skemalagte timer skal du naturligvis arbejde intensivt med stoffet på egen hånd. Undervisningen (skal) tilrettelægges, så et fuldtidsstudie kræver, at du bruger mindst 40 timer om ugen på dit studie (heraf mindst 20 timer på Statistik Dataanalyse). Hvis du bruger mindre end 20 timer om uger, så kan du ikke forvente at få et fornuftigt udbytte af kurset, og din præstation ved eksamen vil være dårligere, end den behøvede at være. Det er naturligvis meget forskelligt fra person til person hvordan denne tid bedst fordeles på de forskellige kursuselementer, men et løst forslag er følgende:</p>
+<ul>
+<li>Forelæsninger: 4 timer</li>
+<li>Øvelsestimer: 5 timer</li>
+<li>Læse i bogen før og efter forelæsninger: 4 timer</li>
+<li>Se eventuelle video(er) og arbejde selvstændigt med indholdet: 2 timer</li>
+<li>Selvstændigt arbejde med opgaver, slides, R programmer m.m. (før/efter timer): 5 timer</li>
+</ul>
 <hr />
 </div>
 <div id="r-programmer-og-datasæt" class="section level2">
@@ -474,9 +490,7 @@ Alle datasæt, som optræder i lærebogen kan downloades ved at installere R-pak
 <div id="eksamen" class="section level1">
 <h1>Eksamen</h1>
 <p>I første omgang kan I læse informationen om eksamen på <a href="https://kurser.ku.dk/course/lmab10069u/2021-2022">kursets officielle kursusbeskrivelse</a>.</p>
-<!--
-Du har allerede nu adgang til en række af [de seneste års eksamenssæt](https://github.com/anderstolver/StatData1_2021/tree/main/docs/eksamensopgaver) (men besvarelserne gøres først tilgængelige løbende).
--->
+<p>Du har allerede nu adgang til en række af <a href="https://github.com/anderstolver/StatData1_2022/tree/main/docs/eksamensopgaver">de seneste års eksamenssæt</a> (men besvarelserne gøres først tilgængelige løbende).</p>
 <p>Eksamensdatoer kan findes på <a href="https://science.ku.dk/uddannelser/eksamensdatoer/">KUs officielle sider</a>.</p>
 <!--
 **Opdateret 17/10-2021:** Jeg har d. 14/10-2021 modtaget en e-mail fra eksamensteamet på KU-SCIENCE med en række praktiske oplysninger, som gengives nedenfor. Der bliver dog gjort opmærksom på, at de studerende som sædvanligt selv vil modtage direkte information fra eksamensteamet. De studerende kan senest 7 dage før eksamen orientere sig omkring lokaler på Selvbetjeningen.

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Anders Tolver" />
+
+
+<title>Kursusplan</title>
+
+<script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Statistisk Dataanalyse 1</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Praktiske oplysninger</a>
+</li>
+<li>
+  <a href="kursusplan.html">Kursusplan</a>
+</li>
+<li>
+  <a href="R.html">R</a>
+</li>
+<li>
+  <a href="data.html">Data</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Opgaver
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://github.com/anderstolver/StatData1_2022/tree/main/docs/opgaver">Fra ovelsestimer</a>
+    </li>
+    <li>
+      <a href="https://github.com/anderstolver/StatData1_2022/tree/main/docs/eksamensopgaver">Gamle eksamensopgaver</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Kursusplan</h1>
+<h4 class="author">Anders Tolver</h4>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#oversigt-over-undervisningen">Oversigt over undervisningen</a>
+<ul>
+<li><a href="#liste-over-gennemgået-pensum">Liste over gennemgået pensum</a></li>
+</ul></li>
+<li><a href="#program-for-enkelte-uger">Program for enkelte uger</a>
+<ul>
+<li><a href="#uge1">Kursusuge 1</a>
+<ul>
+<li><a href="#generel-info">Generel info</a></li>
+<li><a href="#forelæsninger">Forelæsninger</a></li>
+<li><a href="#øvelsestimer">Øvelsestimer</a></li>
+</ul></li>
+<li><a href="#uge2">Kursusuge 2</a>
+<ul>
+<li><a href="#generel-info-1">Generel info</a></li>
+<li><a href="#forelæsninger-1">Forelæsninger</a></li>
+<li><a href="#øvelsestimer-1">Øvelsestimer</a></li>
+</ul></li>
+<li><a href="#uge3">Kursusuge 3</a>
+<ul>
+<li><a href="#generel-info-2">Generel info</a></li>
+<li><a href="#forelæsninger-2">Forelæsninger</a></li>
+<li><a href="#øvelsestimer-2">Øvelsestimer</a></li>
+</ul></li>
+<li><a href="#uge4">Kursusuge 4</a>
+<ul>
+<li><a href="#generel-info-3">Generel info</a></li>
+<li><a href="#forelæsninger-3">Forelæsninger</a></li>
+<li><a href="#øvelsestimer-3">Øvelsestimer</a></li>
+</ul></li>
+<li><a href="#uge5">Kursusuge 5</a>
+<ul>
+<li><a href="#generel-info-4">Generel info</a></li>
+<li><a href="#forelæsninger-4">Forelæsninger</a></li>
+<li><a href="#øvelsestimer-4">Øvelsestimer</a></li>
+</ul></li>
+<li><a href="#uge6">Kursusuge 6</a>
+<ul>
+<li><a href="#generel-info-5">Generel info</a></li>
+<li><a href="#forelæsninger-5">Forelæsninger</a></li>
+<li><a href="#øvelsestimer-5">Øvelsestimer</a></li>
+</ul></li>
+<li><a href="#uge7">Kursusuge 7</a>
+<ul>
+<li><a href="#generel-info-6">Generel info</a></li>
+<li><a href="#forelæsninger-6">Forelæsninger</a></li>
+<li><a href="#øvelsestimer-6">Øvelsestimer</a></li>
+</ul></li>
+<li><a href="#uge8">Kursusuge 8</a>
+<ul>
+<li><a href="#generel-info-7">Generel info</a></li>
+<li><a href="#forelæsninger-7">Forelæsninger</a></li>
+<li><a href="#øvelsestimer-7">Øvelsestimer</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+
+<hr />
+<div id="oversigt-over-undervisningen" class="section level1">
+<h1>Oversigt over undervisningen</h1>
+<p>Skemaet giver en grov foreløbig plan for undervisningen. Planen og linket (til højre for hver kursusdag) med detaljerede oplysninger opdateres løbende for hver enkelt undervisningsgang.</p>
+<table>
+<colgroup>
+<col width="30%" />
+<col width="9%" />
+<col width="15%" />
+<col width="21%" />
+<col width="24%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kursusuge</th>
+<th>Dag</th>
+<th>Emner</th>
+<th>Lærebog</th>
+<th>Detaljer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Mandag (5/9)</td>
+<td>Introduktion, R, Deskriptiv statistik</td>
+<td>Ch. 1</td>
+<td><a href="#uge1">link</a></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Onsdag (7/9)</td>
+<td>Intro til lineær regression og ensidet ANOVA</td>
+<td>Ch. 2+3.1-3.3(+3.7)</td>
+<td><a href="#uge1">link</a></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Mandag (12/9)</td>
+<td>Normalfordelingen</td>
+<td>Ch. 4.1+4.3</td>
+<td><!--[link](#uge2)--></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Onsdag (14/9)</td>
+<td>Analyse af en stikprøve</td>
+<td>Ch. 4.2+4.4, Ch. 5.3.1-5.3.3</td>
+<td><!--[link](#uge2)--></td>
+</tr>
+</tbody>
+</table>
+<div id="liste-over-gennemgået-pensum" class="section level2">
+<h2>Liste over gennemgået pensum</h2>
+<p>Følgende afsnit fra lærebogen er gennemgået</p>
+</div>
+</div>
+<div id="program-for-enkelte-uger" class="section level1">
+<h1>Program for enkelte uger</h1>
+<hr />
+<div id="uge1" class="section level2">
+<h2>Kursusuge 1</h2>
+<div id="generel-info" class="section level3">
+<h3>Generel info</h3>
+<p>Ud over at følge de skemalagte undervisningsaktiviteter bør du i kursusuge 1</p>
+<ul>
+<li><p>læse den <a href="https://anderstolver.github.io/StatData1_2021/index.html">praktiske information om kurset</a></p></li>
+<li><p>installere de nyeste versioner af <a href="https://cran.r-project.org">R</a> og <a href="https://www.rstudio.com/products/rstudio/download/">R Studio</a> på din computer</p></li>
+<li><p>anskaffe dig et eksemplar af lærebogen <em>Claus Thorn Ekstrøm &amp; Helle Sørensen:</em> <strong>Statistical Data Analyse for the Life Sciences (Second Edition)</strong></p></li>
+</ul>
+<p>Du kan vælge at læse eller orientere dig i lærebogens kapitel 1 inden første forelæsning, men det burde ikke være nødvendigt for at følge med. Til senere forelæsninger vil det generelt være min anbefaling, at I bruger tid på at læse de relevante kapitler på forhånd.</p>
+<p>Bemærk desuden, at der sikkert er stillet flere opgaver end du kan nå i timerne, og at du skal lave resten derhjemme. Husk at du forventes at arbejde 20 timer om ugen med kurset, for at få fuldt udbytte af undervisningen.</p>
+</div>
+<div id="forelæsninger" class="section level3">
+<h3>Forelæsninger</h3>
+<div id="forelæsninger-mandag-ca.-kl.-1300-1445-i-aud-a2-82.01" class="section level4">
+<h4>Forelæsninger mandag ca. kl. 13:00-14:45 i aud-A2-82.01</h4>
+<p>Emner</p>
+<ul>
+<li>Introduktion til kurset</li>
+<li>Genopfriskning af R</li>
+<li>Kapitel 1: Datatyper, deskriptiv statistik</li>
+</ul>
+<p>Slides til dagens forelæsning: <!-- [fuld version](slides/sd1_forel220905_long.pdf) - [kort version: 4 slides per side](slides/sd1_forel220905_short.pdf) --></p>
+<p>R-program fra forelæsning d. 5/9-2022: <!-- [output](R/forel220905_Rprog.html) - [R Markdown](R/forel220905_Rprog.Rmd) --></p>
+</div>
+<div id="forelæsninger-onsdag-ca.-kl.-1000-1145-i-aud-a2-82.01" class="section level4">
+<h4>Forelæsninger onsdag ca. kl. 10:00-11:45 i aud-A2-82.01</h4>
+<p>Jeg forsøger at give en kort introduktion til to populære statistiske modeller</p>
+<ul>
+<li>den lineære regressionsmodel</li>
+<li>den ensidede variansanalysemodel</li>
+</ul>
+<!--
+Jeg vil bruge mindre energi på de matematiske detaljer end der er lagt op til i bogen. Det vigtigste er at forstå problemstillingerne, princippet om mindste kvadraters metode, samt begreber som variation, forventede værdier, population, stikprøve. 
+
+* Kapitel 2: Intro til lineær regression og korrelation
+* Kapitel 3, dog ikke detaljerne i afsnit 3.4: Intro til ensidet ANOVA
+-->
+<p>Slides til dagens forelæsning: <!-- [fuld version](slides/sd1_forel220907_long.pdf) - [kort version: 4 slides per side](slides/sd1_forel220907_short.pdf) --></p>
+<p>R-program fra forelæsning d. 7/9-2022: <!-- [output](R/forel220907_Rprog.html) - [R Markdown](R/forel220907_Rprog.Rmd) --></p>
+</div>
+</div>
+<div id="øvelsestimer" class="section level3">
+<h3>Øvelsestimer</h3>
+<div id="øvelser-mandag-ca.-kl.-15.00-16.45" class="section level4">
+<h4>Øvelser mandag ca. kl. 15.00-16.45</h4>
+<p>Vær opmærksom på, at du kan læse mere om øvelseshold og lokaler i afsnittet om <em>Øvelsestimer</em> på siden med <a href="https://anderstolver.github.io/StatData1_2022/index.html">Praktiske oplysninger</a>.</p>
+<p>HS-opgaver kan findes <a href="https://github.com/anderstolver/StatData1_2022/tree/main/docs/opgaver">her</a>. De øvrige opgaver er fra lærebogen.</p>
+<ul>
+<li>Opgave HS.1: Om at arbejde med R og RStudio. Hvis du har helt styr på hvordan du gebærder dig i R, kan du springe opgaven over.</li>
+<li>Opgave 1.1: Datatyper</li>
+<li>Opgave 1.2: Summary measures. Kommentarer: (a) Du må gerne bruge R, men vær sikker på at du forstår hvad der foregår! (b) Se sidste spørgsmål i HS.1 for hvordan du kan indlæse data til R. (c) Man kan tænke på første kvartil som medianen i deldatasættet der inkluderer observationerne fra den mindste observation til medianen.</li>
+<li>Opgave 1.9. Summary measures, fortsættelse af opgave 1.2</li>
+<li>Opgave 1.7, men kun spørgsmål 1-4: Histogram og boxplot i R</li>
+<li>Opgave 1.8: Histogrammer og boxplots</li>
+</ul>
+</div>
+<div id="øvelser-onsdag-ca.-kl.-13.00-15.45" class="section level4">
+<h4>Øvelser onsdag ca. kl. 13.00-15.45</h4>
+<p>HS-opgaver kan findes <a href="https://github.com/anderstolver/StatData1_2022/tree/main/docs/opgaver">her</a>. De øvrige opgaver er fra lærebogen.</p>
+<ul>
+<li>Opgave HS.2: Om installation af R-pakker, datasæt fra pakker</li>
+<li>Opgave HS.3: Om datasæt og variable i R</li>
+<li>Opgave 2.3, men kun spørgsmål 1-7: Lineær regression og korrelation</li>
+<li>Opgave 2.7: Korrelation</li>
+<li>Opgave HS.4: Ensidet ANOVA</li>
+<li>Opgave 3.1: Ensidet ANOVA</li>
+</ul>
+<hr />
+</div>
+</div>
+</div>
+<div id="uge2" class="section level2">
+<h2>Kursusuge 2</h2>
+<div id="generel-info-1" class="section level3">
+<h3>Generel info</h3>
+</div>
+<div id="forelæsninger-1" class="section level3">
+<h3>Forelæsninger</h3>
+</div>
+<div id="øvelsestimer-1" class="section level3">
+<h3>Øvelsestimer</h3>
+<hr />
+</div>
+</div>
+<div id="uge3" class="section level2">
+<h2>Kursusuge 3</h2>
+<div id="generel-info-2" class="section level3">
+<h3>Generel info</h3>
+</div>
+<div id="forelæsninger-2" class="section level3">
+<h3>Forelæsninger</h3>
+</div>
+<div id="øvelsestimer-2" class="section level3">
+<h3>Øvelsestimer</h3>
+<hr />
+</div>
+</div>
+<div id="uge4" class="section level2">
+<h2>Kursusuge 4</h2>
+<div id="generel-info-3" class="section level3">
+<h3>Generel info</h3>
+</div>
+<div id="forelæsninger-3" class="section level3">
+<h3>Forelæsninger</h3>
+</div>
+<div id="øvelsestimer-3" class="section level3">
+<h3>Øvelsestimer</h3>
+<hr />
+</div>
+</div>
+<div id="uge5" class="section level2">
+<h2>Kursusuge 5</h2>
+<div id="generel-info-4" class="section level3">
+<h3>Generel info</h3>
+</div>
+<div id="forelæsninger-4" class="section level3">
+<h3>Forelæsninger</h3>
+</div>
+<div id="øvelsestimer-4" class="section level3">
+<h3>Øvelsestimer</h3>
+<hr />
+</div>
+</div>
+<div id="uge6" class="section level2">
+<h2>Kursusuge 6</h2>
+<div id="generel-info-5" class="section level3">
+<h3>Generel info</h3>
+</div>
+<div id="forelæsninger-5" class="section level3">
+<h3>Forelæsninger</h3>
+</div>
+<div id="øvelsestimer-5" class="section level3">
+<h3>Øvelsestimer</h3>
+<hr />
+</div>
+</div>
+<div id="uge7" class="section level2">
+<h2>Kursusuge 7</h2>
+<div id="generel-info-6" class="section level3">
+<h3>Generel info</h3>
+</div>
+<div id="forelæsninger-6" class="section level3">
+<h3>Forelæsninger</h3>
+</div>
+<div id="øvelsestimer-6" class="section level3">
+<h3>Øvelsestimer</h3>
+<hr />
+</div>
+</div>
+<div id="uge8" class="section level2">
+<h2>Kursusuge 8</h2>
+<div id="generel-info-7" class="section level3">
+<h3>Generel info</h3>
+</div>
+<div id="forelæsninger-7" class="section level3">
+<h3>Forelæsninger</h3>
+</div>
+<div id="øvelsestimer-7" class="section level3">
+<h3>Øvelsestimer</h3>
+<hr />
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
