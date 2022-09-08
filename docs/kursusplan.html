@@ -387,14 +387,42 @@ $(document).ready(function () {
 <td>Mandag (12/9)</td>
 <td>Normalfordelingen</td>
 <td>Ch. 4.1+4.3</td>
-<td><!--[link](#uge2)--></td>
+<td><a href="#uge2">link</a></td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>Onsdag (14/9)</td>
 <td>Analyse af en stikprøve</td>
 <td>Ch. 4.2+4.4, Ch. 5.3.1-5.3.3</td>
-<td><!--[link](#uge2)--></td>
+<td><a href="#uge2">link</a></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Mandag (19/9)</td>
+<td>Linæer regression og ensidet ANOVA (i detaljer)</td>
+<td>Ch. 5.1-5.2</td>
+<td><!--[link](#uge3)--></td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Onsdag (21/9)</td>
+<td>Hypotesetest med fokus på t-test</td>
+<td>Resten af Ch. 5, Ch. 3.5, (Ch. 6.1-6.2)</td>
+<td><!--[link](#uge3) --></td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Mandag (26/9)</td>
+<td>F-test samt diskussion af fejltyper ved statistiske test</td>
+<td>(Ch. 6.1-6.2) + Ch. 6.3+6.4</td>
+<td><!--[link](#uge4)--></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Onsdag (28/9)</td>
+<td>Modelkontrol og prædiktion</td>
+<td>Ch. 7</td>
+<td><!--[link](#uge4)--></td>
 </tr>
 </tbody>
 </table>
@@ -447,7 +475,7 @@ $(document).ready(function () {
 <p>Jeg vil bruge mindre energi på de matematiske detaljer end der er lagt op til i bogen. Det vigtigste er at forstå problemstillingerne, princippet om mindste kvadraters metode, samt begreber som variation, forventede værdier, population, stikprøve.</p>
 <ul>
 <li>Kapitel 2: Intro til lineær regression og korrelation</li>
-<li>Kapitel 3, dog ikke detaljerne i afsnit 3.4: Intro til ensidet ANOVA</li>
+<li>Kapitel 3.1-3.3+3.7: Intro til ensidet ANOVA</li>
 </ul>
 <p>Slides til dagens forelæsning: <a href="slides/sd1_forel220907_long.pdf">fuld version</a> - <a href="slides/sd1_forel220907_short.pdf">kort version: 4 slides per side</a></p>
 <p>R-program fra forelæsning d. 7/9-2022: <a href="R/Rprog220907.html">output</a> - <a href="R/Rprog220907.Rmd">R Markdown</a>. Hvis du har problemer med at hente <code>.Rmd</code>-filerne ned, så kan du prøve <a href="https://github.com/anderstolver/StatData1_2022/tree/main/docs/R">her</a>.</p>
@@ -487,13 +515,78 @@ $(document).ready(function () {
 <h2>Kursusuge 2</h2>
 <div id="generel-info-1" class="section level3">
 <h3>Generel info</h3>
+<ul>
+<li><p>Tænk godt over, hvordan den første undervisningsuge fungerede både mht. det faglige og den praktiske afvikling. Du må meget gerne skrive tilbage til mig (=Anders), hvis du mener at have input, som kunne være med til at forbedre undervisningen for dig og dine medstuderende. Lad være med at vente, til det er for sent at ændre på undervisningsformatet!</p></li>
+<li><p>Husk at bruge tid på at lave opgaverne, hvis du gerne vil komme i form til den skriftlige eksamen. Vi har rigtig mange hjælpelærere, som er ivrige for at hjælpe jer igennem.</p></li>
+<li><p>Opgave HS.9 (til onsdagsøvelserne) handler om indlæsning af data fra eksterne filer. Der vil være opgaver til eksamen som overhovedet ikke kan løses hvis man ikke kan læse data ind, så sørg for at få styr på det med det samme.</p></li>
+<li><p>Selvom forelæsningerne er annonceret til at starte kl. –:00 (sharp)!, så kan jeg sjældent nå at gøre alt udstyret klar efter den forrige underviser før ca. 10 minutter over hel. Derfor bliver det nye officielle starttidspunkt for forelæsningerne</p>
+<ul>
+<li>mandage kl. 13:10</li>
+<li>onsdage kl. 10:10</li>
+</ul></li>
+</ul>
 </div>
 <div id="forelæsninger-1" class="section level3">
 <h3>Forelæsninger</h3>
+<div id="forelæsninger-mandag-kl.-1310-1455-i-aud-a2-82.01" class="section level4">
+<h4>Forelæsninger mandag kl. 13:10-14:55 i aud-A2-82.01</h4>
+<p>Ved dagens forelæsning snakker vi om lærebogens Kapitel 4, dog ikke afsnit 4.2 og 4.4. Hovedemnerne er</p>
+<ul>
+<li>Normalfordelingen og dens egenskaber</li>
+<li>Hvordan checker man om data er normalfordelte?</li>
+<li>Hvorfor er normalfordelingen så interessant/vigtig?</li>
+</ul>
+<p>Slides til dagens forelæsning: <!--
+[fuld version](slides/sd1_forel220912_long.pdf) - [kort version: 4 slides per side](slides/sd1_forel220912_short.pdf)
+--></p>
+<p>R-program fra forelæsning d. 12/9-2022: <!--
+[output](R/forel210913_Rprog.html) - [R Markdown](R/forel210913_Rprog.Rmd) 
+--></p>
+<p>Hvis du har problemer med at hente <code>.Rmd</code>-filerne ned, så kan du prøve <a href="https://github.com/anderstolver/StatData1_2022/tree/main/docs/R">her</a>.</p>
+</div>
+<div id="forelæsninger-onsdag-kl.-1010-1155-i-aud-a2-82.01" class="section level4">
+<h4>Forelæsninger onsdag kl. 10:10-11:55 i aud-A2-82.01</h4>
+<p>Kapitel 5 tages i en lidt speciel rækkefølge, idet vi først snakker om model, estimation og konfidensinterval for det eksempler der kaldes en-stikprøve (one sample) problemet. Først senere går tilbage til lineær regression og ensidet ANOVA. I bogen er de tre modeltyper blandet mere sammen.</p>
+<ul>
+<li>Afsnit 4.2: Analyse af en stikprøve (one sample)</li>
+<li>Afsnit 4.4: Du kan læse dette overfladisk; jeg siger nok lidt om det ved forelæsningerne</li>
+<li>Afsnit 5.3: Indtil delafsnit 5.3.4 (dvs. side 117 nederst til side 124 øverst)</li>
+</ul>
+<p>Slides til dagens forelæsning: <!--
+[fuld version](slides/sd1_forel220914_long.pdf) - [kort version: 4 slides per side](slides/sd1_forel220914_short.pdf)--></p>
+<p>R-program fra forelæsning d. 14/9-2022: <!--
+[output](R/forel210915_Rprog.html) - [R Markdown](R/forel210915_Rprog.Rmd)--> Hvis du har problemer med at hente <code>.Rmd</code>-filerne ned, så kan du prøve <a href="https://github.com/anderstolver/StatData1_2022/tree/main/docs/R">her</a>.</p>
+</div>
 </div>
 <div id="øvelsestimer-1" class="section level3">
 <h3>Øvelsestimer</h3>
+<div id="øvelser-mandag-ca.-kl.-15.00-16.45-1" class="section level4">
+<h4>Øvelser mandag ca. kl. 15.00-16.45</h4>
+<p>HS-opgaver kan findes <a href="https://github.com/anderstolver/StatData1_2022/tree/main/docs/opgaver">her</a>. De øvrige opgaver er fra lærebogen.</p>
+<ul>
+<li>Opgave HS.5: Om R Markdown. Hvis du allerede i kursusuge 1 har arbejdet med R Markdown, så læs blot opgaven igennem, og fokuser kun på de delspørgsmål, der virker relevante for dig.<br />
+</li>
+<li>Opgave 4.1: Histogrammer og stikprøvestørrelser.</li>
+<li>Opgave HS.6: Normalfordelingen</li>
+<li>Opgave HS.7: Transformation</li>
+</ul>
+<!--
+* Caseopgave 1, del I: side 428 i bogen
+-->
+</div>
+<div id="øvelser-onsdag-ca.-kl.-1300-1545" class="section level4">
+<h4>Øvelser onsdag ca. kl. 13:00-15:45</h4>
+<p>HS-opgaver kan findes <a href="https://github.com/anderstolver/StatData1_2022/tree/main/docs/opgaver">her</a>. De øvrige opgaver er fra lærebogen.</p>
+<ul>
+<li>Opgave HS.9: Indlæsning af data.</li>
+<li>Opgave HS.10: Konfidensinterval på flere måder i R</li>
+<li>HS.8: Konfidensinterval</li>
+<li>Opgave HS.11: Gæt på antal punkter, variationskoefficient.</li>
+<li>Opgave 4.5: Evaluering af QQ-plots</li>
+<li>HS.12: Ekstra spørgsmål til opgave 4.5</li>
+</ul>
 <hr />
+</div>
 </div>
 </div>
 <div id="uge3" class="section level2">
