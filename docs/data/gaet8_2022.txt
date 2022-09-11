@@ -1,0 +1,22 @@
+gul 8.8
+gul 7.0
+gul 6.8
+gul 11.1
+gul 8.0
+gul 9.0
+gul 8.0
+gul 6.5
+gul 6.9
+gul 6.8
+gul 7.4
+gul 5.5
+gul 8.4
+gul 7.3
+gul 9.6
+gul 6.0
+gul 10.3
+gul 6.2
+gul 6.7
+gul 6.7
+
+
