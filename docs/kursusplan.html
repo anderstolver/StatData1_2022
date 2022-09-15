@@ -401,14 +401,14 @@ $(document).ready(function () {
 <td>Mandag (19/9)</td>
 <td>Linæer regression og ensidet ANOVA (i detaljer)</td>
 <td>Ch. 5.1-5.2</td>
-<td><!--[link](#uge3)--></td>
+<td><a href="#uge3">link</a></td>
 </tr>
 <tr class="even">
 <td>3</td>
 <td>Onsdag (21/9)</td>
 <td>Hypotesetest med fokus på t-test</td>
 <td>Resten af Ch. 5, Ch. 3.5, (Ch. 6.1-6.2)</td>
-<td><!--[link](#uge3) --></td>
+<td><a href="#uge3">link</a></td>
 </tr>
 <tr class="odd">
 <td>4</td>
@@ -428,11 +428,13 @@ $(document).ready(function () {
 </table>
 <div id="liste-over-gennemgået-pensum" class="section level2">
 <h2>Liste over gennemgået pensum</h2>
-<p>Følgende afsnit fra lærebogen er gennemgået i kursusuge 1</p>
+<p>Følgende afsnit fra lærebogen er gennemgået i kursusuge 1-2</p>
 <ul>
 <li><p>Chapter 1: Datatyper, visualisering og deskriptiv statistik</p></li>
 <li><p>Chapter 2: Introduktion til lineær regression</p></li>
 <li><p>Chapter 3: Sammenligning af grupper og introduktion til ensidet variansanalyse (kun 3.1-3.3 + 3.7 indtil videre)</p></li>
+<li><p>Chapter 4: Normalfordelingen. Nogle af de mere teoretiske ting omkring Infobox 4.2, 4.3 og 4.5 illustreres primært gennem eksempler (computersimulationer). Afsnit 4.4. er kun kursorisk.</p></li>
+<li><p>Chapter 5.3.1-5.3.3: Konfidensintervaller med fokus på konstruktion af konfidensintervaller for middelværdien i en sample (<em>one sample problem</em>)</p></li>
 </ul>
 </div>
 </div>
@@ -552,6 +554,10 @@ $(document).ready(function () {
 <p>R-program fra forelæsning d. 14/9-2022: <a href="R/Rprog220914.html">output</a> - <a href="R/Rprog220914.Rmd">R Markdown</a></p>
 <p>Hvis du har problemer med at hente <code>.Rmd</code>-filerne ned, så kan du prøve <a href="https://github.com/anderstolver/StatData1_2022/tree/main/docs/R">her</a>.</p>
 </div>
+<div id="videoer-opsamling-på-undervisning-i-denne-uge" class="section level4">
+<h4>Videoer (opsamling på undervisning i denne uge)</h4>
+<p>Link til videoer findes i Absalon under modulet <strong>Videoer</strong>.</p>
+</div>
 </div>
 <div id="øvelsestimer-1" class="section level3">
 <h3>Øvelsestimer</h3>
@@ -588,13 +594,74 @@ $(document).ready(function () {
 <h2>Kursusuge 3</h2>
 <div id="generel-info-2" class="section level3">
 <h3>Generel info</h3>
+<ul>
+<li><p>Ved den skriftlige eksamen vil en del af eksamenssættet bestå af <em>multiple choice opgaver</em> (dvs. små quiz-spørgmål). For at give dig mulighed for at træne dette format, så vil der (næsten) hver uge være en ny quiz i Absalon, som du kan øve dig på. Efter aftale er disse quizzer er typisk tilgængelige fra tirsdag middag. Du kan passende bruge noget at din hjemmearbejdstid til at lave quizzerne, og dermed repetere ugens pensum. Der lægges en video ud sidst på ugen, hvor jeg gennemgår løsningen på quizzerne.</p></li>
+<li><p>I denne uge skal vi have udvidet vores diskussion af statistiske modeller, estimation, standard errors og konfidensintervaller til også at dække lineær regression og ensidet variansanalyse. Derudover skal vi snakke om hypotesetest. Nogle af jer vil opleve at analyserne hver for sig er nogenlunde nemme at gå til, og at det svære først og fremmest er at finde ud af hvilken analyse der er den korrekte at gribe fat i. Jeg anbefaler at I bruger <a href="notater/modeller.pdf">modelvalgsdiagrammet</a> (flowdiagram/procesdiagram), som jeg tit viser til forelæsningerne.</p></li>
+<li><p>Du formodes nu (efter kursusuge 2) at være i stand til at læse data ind fra excel- eller tekstfiler (<a href="opgaver/hs5-12.pdf">opgave HS.9</a>). Indlæsning af xlsx-filer kræver pakken <code>readxl</code>. Den kan installeres en gang for alle som forklaret i opgave HS.9, men skal loades når du skal bruge den, fx vha. library-funktionen. Som regel uploades data både som Excel-filer og som tekstfiler.</p></li>
+<li><p>Husk at rækkefølgen af opgaver ikke er tilfældig, så jeg anbefaler at du regner dem i den rækkefølge de står på ugeplanen.</p></li>
+</ul>
 </div>
 <div id="forelæsninger-2" class="section level3">
 <h3>Forelæsninger</h3>
+<div id="forelæsninger-mandag-kl.-1305-1450-i-aud-a2-82.01" class="section level4">
+<h4>Forelæsninger mandag kl. 13:05-14:50 i aud-A2-82.01</h4>
+<p>I onsdags snakkede vi om statistisk model, estimation, standard error, konfidensinterval for en enkelt stikprøve. I dag skal vi have de samme begreber på plads for ensidet ANOVA og lineær regression.</p>
+<ul>
+<li>Kapitel 5. Bemærk at vi allerede har snakket om det meste af afsnit 5.3, og at vi nok ikke når afsnit 5.4 i dag.</li>
+</ul>
+<p>Slides til dagens forelæsning: <!--[fuld version](slides/sd1_forel220919_long.pdf) - [kort version: 4 slides per side](slides/sd1_forel220919_short.pdf)--></p>
+<p>R-program fra forelæsning d. 19/9-2022: <!--[output](R/Rprog220919.html) - [R Markdown](R/Rprog220919.Rmd)--></p>
+</div>
+<div id="forelæsninger-onsdag-kl.-1010-1155-i-aud-a2-82.01-1" class="section level4">
+<h4>Forelæsninger onsdag kl. 10:10-11:55 i aud-A2-82.01</h4>
+<p>Planen er, at vi gennemgår</p>
+<ul>
+<li>Afsnit 3.5 og 5.4 om to stikprøver (parrede og uparrede)</li>
+<li>Afsnit 6.1-6.2 om hypotesetest (i det omfang tiden tillader det)</li>
+</ul>
+<p>Slides til dagens forelæsning: <!--[fuld version](slides/sd1_forel220921_long.pdf) - [kort version: 4 slides per side](slides/sd1_forel220921_short.pdf)--></p>
+<p>R-program fra forelæsning d. 21/9-2022: <!--[output](R/Rprog220921.html) - [R Markdown](R/Rprog220921.Rmd)
+--></p>
+<!--
+#### Video (opsamling på forelæsninger i denne uge)
+
+Link til videoer findes i Absalon under modulet Forelæsninger.
+
+Der findes to videoer
+
+* En video som knytter nogle kommenaterer til output fra ensidet ANOVA med udgangspunkt i R-programmet fra forelæsningen mandag d. 20/9-2021
+
+* Video som uddyber analysen af datasættet med *studerendes gæt på antal punkter* (fra StatData1 2017) med udgangspunkt i følgende R-program: [output](R/punktplot210922_Rprog.html) - [R Markdown](R/punktplot210922_Rprog.Rmd)
+
+-->
+</div>
 </div>
 <div id="øvelsestimer-2" class="section level3">
 <h3>Øvelsestimer</h3>
+<div id="øvelser-mandag-kl.-15.00-16.45" class="section level4">
+<h4>Øvelser mandag kl. 15.00-16.45</h4>
+<p>HS-opgaver kan findes <a href="https://github.com/anderstolver/StatData1_2022/tree/main/docs/opgaver">her</a>. De øvrige opgaver er fra lærebogen.</p>
+<p>Der er opgaver i flere modeltyper. Brug gerne <a href="https://github.com/anderstolver/StatData1_2022/tree/main/docs/notater">modeldiagrammet</a> i hver opgave til at gennemskue hvilket set-up der er det relevante. Der er mange opgaver, så regn med at skulle bruge noget af din hjemmearbejdstid på opgaverne før eller efter øvelsestimerne.</p>
+<ul>
+<li>Opgave HS.13: Sudoko</li>
+<li>Opgave HS.14: Højde- og vægtdata</li>
+<li>Opgave 5.8: Opløsningsmidler</li>
+<li>Opgave 5.10: Priser på landbrugsejendomme. I spørgsmål 3 behøver du ikke beregne KI.</li>
+<li>Opgave HS.15: Gæt på punktplot</li>
+</ul>
+</div>
+<div id="øvelser-onsdag-kl.-1300-1545" class="section level4">
+<h4>Øvelser onsdag kl. 13:00-15:45</h4>
+<p>Der er opgaver i mange modeltyper. Brug gerne modeldiagrammet i hver opgave til at gennemskue hvilket set-up der er det relevante.</p>
+<ul>
+<li>Opgave 6.1: Drægtighed for heste. Du skal lave dette “manuelt”, altså ved at bruge formler i bogen.</li>
+<li>Opgave HS.16: Parret vs uparret</li>
+<li>Opgave HS.17: Hjerte- og kropsvægt for katte.</li>
+<li>Opgave 6.6: Soyabønner</li>
+<li>Opgave 6.2: Maveeksperiment</li>
+</ul>
 <hr />
+</div>
 </div>
 </div>
 <div id="uge4" class="section level2">
