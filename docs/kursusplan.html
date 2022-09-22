@@ -415,14 +415,14 @@ $(document).ready(function () {
 <td>Mandag (26/9)</td>
 <td>F-test samt diskussion af fejltyper ved statistiske test</td>
 <td>(Ch. 6.1-6.2) + Ch. 6.3+6.4</td>
-<td><!--[link](#uge4)--></td>
+<td><a href="#uge4">link</a></td>
 </tr>
 <tr class="even">
 <td>4</td>
 <td>Onsdag (28/9)</td>
 <td>Modelkontrol og prædiktion</td>
 <td>Ch. 7</td>
-<td><!--[link](#uge4)--></td>
+<td><a href="#uge4">link</a></td>
 </tr>
 <tr class="odd">
 <td>5</td>
@@ -644,12 +644,9 @@ $(document).ready(function () {
 <p>Link til videoer findes i Absalon under modulet Forelæsninger.</p>
 <p>Der findes følgende videoer</p>
 <ul>
-<li>En video som knytter nogle kommenaterer til output fra ensidet ANOVA med udgangspunkt i R-programmet fra forelæsningen mandag d. 19/9-2022</li>
+<li><p>En video som knytter nogle kommenaterer til output fra ensidet ANOVA med udgangspunkt i R-programmet fra forelæsningen mandag d. 19/9-2022</p></li>
+<li><p>Video (optaget i 2021!) som uddyber analysen af datasættet med <em>studerendes gæt på antal punkter</em> (fra StatData1 2017) med udgangspunkt i følgende R-program: <a href="R/Rprog_punktplot220921.html">output</a> - <a href="R/Rprog_punktplot220921.Rmd">R Markdown</a></p></li>
 </ul>
-<!--
-* Video som uddyber analysen af datasættet med *studerendes gæt på antal punkter* (fra StatData1 2017) med udgangspunkt i følgende R-program: [output](R/punktplot210922_Rprog.html) - [R Markdown](R/punktplot210922_Rprog.Rmd)
-
--->
 </div>
 </div>
 <div id="øvelsestimer-2" class="section level3">
@@ -684,13 +681,88 @@ $(document).ready(function () {
 <h2>Kursusuge 4</h2>
 <div id="generel-info-3" class="section level3">
 <h3>Generel info</h3>
+<!--
+* Jeg har stillet en [frivillig opgave til aflevering](#aflevering1) onsdag den 30. september. Opgaven skal afleveres elektronisk som pdf-fil. Det er et rasende godt tilbud, men det er frivilligt. Du kan ikke regne med, at hjælpelærerne har tid til at hjælpe med opgaverne i forbindelse med øvelsestimerne (men det er ikke forbudt at spørge). Brug diskussionforum på Absalon hvis du har spørgsmål.
+
+* Der var meget nyt pensum og mange opgaver i kursusuge 3. Som udgangspunkt lægger jeg hver uge et *træningsprogram*, som (inklusive skemalagt undervisning) burde kunne holde jer beskæftiget i 20 timer per uge. Forvent derfor ikke, at du kan nå alle øvelsesopgaverne i løbet af den skemalagte øvelsesundervisning. Hvis du arbejder *hjemme* med opgaver, som du ikke nåede til øvelsestimerne, og fx. har spørgsmål til vejledende besvarelser, så er du naturligvis velkommen til at skrive til en hjælpelærer. Det er dit eget valg, om du vælger at gennemføre alle *træningssessioner* (fx. om du bruger tid hjemme på resten af opgaverne og om du efterbehandler forelæsninger + R-programmer). Mange vil sikkert kunne bestå kurset, med en koncentreret indsats som begrænser sig til mandag eftermiddag og hele onsdagen, men så vil du sikkert måtte leve med, at der er nogle løse ender, som du ikke får styr på.
+
+* Husk at jeg lægger quizzer ud hver uge, og at der kommer lignende spørgsmål til eksamen. Der ligger nu 3 quizzer i Absalon som trækker på det gennemgåede stof fra kursusugerne 1-3.
+-->
+<ul>
+<li><p>Der vil være en del fokus på at <em>opskrive en statistisk model</em>, hver vi foretager en analyse, at et nyt datasæt. En statistisk model er en matematisk beskrivelse af den variation der vil være, når man udtrækker data/stikprøven fra populationen. Vi har typisk brugt en skabelon med følgende ingredienser</p>
+<ul>
+<li><strong>Data</strong>: hvilken variabel er responsvariablen (<span class="math inline">\(y_i\)</span>), hvilke variable er den/de forklarende variable (<span class="math inline">\(x_i\)</span>)</li>
+<li><strong>Model</strong>: variationen i data/responsen <span class="math inline">\(y_1, ..., y_n\)</span> beskrives som uafhængige normalfordelte variable, hvor <span class="math inline">\(y_i\)</span> er normalfordelt med middelværdi <span class="math inline">\(\mu_i\)</span> og en fælles spredning <span class="math inline">\(\sigma\)</span></li>
+<li><strong>Middelværdistrukturen</strong>: beskriver hvordan <span class="math inline">\(\mu_i\)</span> afhænger af de forklarende variable i modellen via nogle populationsparametre. Fx (lineær regression): <span class="math inline">\(\mu_i = \alpha + \beta \cdot x_i\)</span></li>
+</ul></li>
+<li><p>I bliver tit bedt om at <em>fitte en model</em>. Det betyder blot at køre den relevante <code>lm</code>-kommando. Intet andet. Det betyder fx ikke at man skal tegne noget. Senere i opgaven bliver I altid spurgt om ting, hvor I skal bruge modellen, fx. noget som kan aflæses af summary fra modellen.</p></li>
+<li><p>Når du har fittet en model, så lav et <code>summary</code> af modellen, og overvej om den indeholder de parameterlinjer som du forventer. Husk også at estimater, p-værdier mm. er uinteressante, hvis man ikke ved hvad de betyder. Det hele er ret ligegyldigt hvis vi ikke kan fortolke parametre og hypoteser, så tænk altid over fortolkningerne når du løser opgaver.</p></li>
+<li><p>Der kommer nogle opgaver på onsdag hvor det bliver relevant at transformere data. Kig gerne på analysen i <a href="R/Rprog220914.html">R-programmet fra 14/9-2022</a> eller på <a href="R/Rprog_punktplot220921.html">R-programmet som blev diskuteret i videoen efter kursusuge 3</a> for eksempler på hvordan man fortolker resultaterne hvis analysen er foretaget på log-transformerede data.</p></li>
+</ul>
 </div>
 <div id="forelæsninger-3" class="section level3">
 <h3>Forelæsninger</h3>
+<div id="forelæsninger-mandag-kl.-1305-1450-i-aud-a2-82.01-1" class="section level4">
+<h4>Forelæsninger mandag kl. 13:05-14:50 i aud-A2-82.01</h4>
+<ul>
+<li>Afsnit 6.3 - 6.4 om F-test. Jeg vil lægge mindre vægt på LSD-diskussionen end der er lagt op til bogen.</li>
+<li>Afsnit 6.5 om fejltyper ved statistiske test</li>
+<li>Afrunding af kapitel 5 og 6</li>
+</ul>
+<p>Slides til dagens forelæsning: <!--[fuld version](slides/sd1_forel210927_long.pdf) - [kort version: 4 slides per side](slides/sd1_forel210927_short.pdf)--></p>
+<p>R-program fra forelæsning d. 26/9-2022: <!--
+[output](R/Rprog220926.html) - [R Markdown](R/Rprog220926.Rmd)
+--></p>
+</div>
+<div id="forelæsninger-onsdag-kl.-1010-1155-i-aud-a2-82.01-2" class="section level4">
+<h4>Forelæsninger onsdag kl. 10:10-11:55 i aud-A2-82.01</h4>
+<ul>
+<li>Kapitel 7 om modelkontrol og prædiktion</li>
+</ul>
+<p>Slides til dagens forelæsning: <!-- [fuld version](slides/sd1_forel210929_long.pdf) - [kort version: 4 slides per side](slides/sd1_forel210929_short.pdf)
+--></p>
+<p>R-program fra forelæsning d. 28/9-2022: <!--
+[output](R/Rprog220928.html) - [R Markdown](R/Rprog220928.Rmd)
+--></p>
+</div>
 </div>
 <div id="øvelsestimer-3" class="section level3">
 <h3>Øvelsestimer</h3>
+<div id="øvelser-mandag-kl.-15.00-16.45-1" class="section level4">
+<h4>Øvelser mandag kl. 15.00-16.45</h4>
+<p>HS-opgaver kan findes <a href="https://github.com/anderstolver/StatData1_2022/tree/main/docs/opgaver">her</a>. De øvrige opgaver er fra lærebogen.</p>
+<ul>
+<li>Opgave 6.7. Ensidet ANOVA med 4 grupper.
+<ul>
+<li>Vink til spg. 1: Når du skal specificere en model, skal du sige hvilken slags model der er tale om og angive antagelserne.</li>
+<li>Vink til spg. 2: Du kan fx skifte referencegruppe når du skal sammenligne gruppe 2 og 3</li>
+</ul></li>
+<li>Opgave 6.14.
+<ul>
+<li>Vink til spg 5: Husk at der er lige mange observationer i hver gruppe. Hvad betyder det om SE for de forskellige parvise forskelle? Se evt. afsnit 6.3.2 i lærebogen.</li>
+<li>Vink til spg. 6: Gennemsnitsværdien for hver <em>supplier</em> skal estimeres ved gennemsnittet af n (ukendt!) observationer fra den nye undersøgelse/stikprøve. Find formlen for 95 % - konfidensintervaller for en stikprøve (one sample) og start med at finde ud af, hvilke størrelser som indgår i formlen.</li>
+</ul></li>
+<li>Opgave HS.19. Specialtilfælde af lineær regression. Data findes på kursushjemmesiden.</li>
+</ul>
+</div>
+<div id="øvelser-onsdag-kl.-13.00-15.45" class="section level4">
+<h4>Øvelser onsdag kl. 13.00-15.45</h4>
+<p>Regn følgende opgaver fra lærebogen.</p>
+<ul>
+<li>Opgave 7.7. Bemærk: Figuren nederst til højre er lidt atypisk i forhold til hvad man ser i praksis, men overvej alligevel hvad “der er galt” med figuren.</li>
+<li>Opgave 7.2. To ekstra spørgsmål:
+<ul>
+<li><ol start="5" style="list-style-type: decimal">
+<li>Bestem et 95% konfidensinterval og et 95% prædiktionsinterval svarende til værdien 8 for radioact. Hvad er fortolkningen af de to intervaller?</li>
+</ol></li>
+<li><ol start="6" style="list-style-type: decimal">
+<li>For hvilken værdi af radioact vil man forvente at få en tumorvægt på 0.2?</li>
+</ol></li>
+</ul></li>
+<li>Opgave 7.4</li>
+</ul>
 <hr />
+</div>
 </div>
 </div>
 <div id="uge5" class="section level2">
